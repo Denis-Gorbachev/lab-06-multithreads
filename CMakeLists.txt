@@ -20,7 +20,7 @@ HunterGate(
         SHA1 "95c47c92f68edb091b5d6d18924baabe02a6962a"
 )
 
-project(thread VERSION 0.1.0)
+project(multithreading VERSION 0.1.0)
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")

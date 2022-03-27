@@ -81,7 +81,7 @@ void add_json(const std::string& hash, const std::string& r_string) {
         std::string hash = picosha2::hash256_hex_string(temp);
         if ((hash[63] == '0') && (hash[62] == '0') && (hash[61] == '0') && (hash[60] == '0')) {
             add_json(hash, r_string);
-            BOOST_LOG_TRIVIAL(trace) << "Correct value: " << r_string << "Hash: " << hash;
+            BOOST_LOG_TRIVIAL(trace) << "Correct value: " << r_string << "  Hash: " << hash;
         }
 // else {
 // BOOST_LOG_TRIVIAL(info) « "Correct value: " « r_string « ", Hash: " « hash;

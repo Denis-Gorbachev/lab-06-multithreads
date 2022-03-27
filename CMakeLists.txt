@@ -30,7 +30,7 @@ hunter_add_package(GTest)
 find_package(GTest CONFIG REQUIRED)
 
 hunter_add_package(Boost COMPONENTS log system filesystem thread date_time)
-find_package(Boost CONFIG REQUIRED filesystem log system thread log_setup date_time thread)
+find_package(Boost CONFIG REQUIRED filesystem log system thread log_setup date_time)
 
 hunter_add_package(nlohmann_json)
 find_package(nlohmann_json CONFIG REQUIRED)
@@ -73,6 +73,7 @@ if(BUILD_COVERAGE)
   find_package(codecov)
   string(APPEND CMAKE_CXX_FLAGS " —coverage")
   add_coverage(${PROJECT_NAME})
+  add_coverage(tests)
   coverage_evaluate()
 endif()
 

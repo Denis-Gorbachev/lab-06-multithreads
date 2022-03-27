@@ -73,7 +73,6 @@ if(BUILD_COVERAGE)
   find_package(codecov)
   string(APPEND CMAKE_CXX_FLAGS " —coverage")
   add_coverage(${PROJECT_NAME})
-  add_coverage(tests)
   coverage_evaluate()
 endif()
 

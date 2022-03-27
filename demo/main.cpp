@@ -27,7 +27,7 @@ std::chrono::time_point<std::chrono::system_clock> begin;
 std::mutex mut;
 json array;
 std::string file_name;
-using backend_type = sinks::text_file_backend;;
+using backend_type = sinks::text_file_backend;
 const char alpha_num[] = "0123456789AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
 std::vector<unsigned char> generator_random() {

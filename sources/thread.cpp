@@ -4,6 +4,3 @@
 
 #include <thread.hpp>
 
-auto example() -> void {
-  throw std::runtime_error("not implemented");
-}

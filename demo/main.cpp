@@ -1,4 +1,4 @@
-#include <../PicoSHA2/picosha2.h>
+#include "picosha2.h"
 #include <nlohmann/json.hpp>
 #include <boost/log/trivial.hpp>
 #include <boost/log/sinks/text_file_backend.hpp>

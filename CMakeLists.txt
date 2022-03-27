@@ -37,7 +37,7 @@ hunter_add_package(nlohmann_json)
 find_package(nlohmann_json CONFIG REQUIRED)
 
 add_library(${PROJECT_NAME} STATIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/PicoSHA2/picosha2.h
+        include/picosha2.h
         )
 
 add_executable(demo
